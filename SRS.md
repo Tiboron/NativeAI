@@ -1,6 +1,6 @@
 Absolutely. I consider the Skill System to be an approved addition to the SRS, and from this point forward I'll treat it as part of the Native AI architecture.
 
-Since we've agreed that GitHub—not ChatGPT memory—is the permanent home of the SRS, I won't try to store the full document in memory. Instead, I'll treat the following as the current SRS baseline for our Architecture Review Sessions.
+Since we've agreed that GitHub—not ChatGPT memory—is the permanent home of the SRS, I won't try to store the full document in memory. Instead, I'll treat the following as the current SRS baseline.
 
 
 ---
@@ -17,7 +17,7 @@ Project Type: Offline-first, Windows-native operating intelligence platform.
 
 Deployment: USB-first with optional installed version.
 
-Mission: Understand any compatible workstation, intelligently orchestrate installed software to accomplish user goals, continuously improve through validated local knowledge and experience, and operate transparently under strict safety and security governance.
+Mission: Understand any compatible workstation, intelligently orchestrate installed software to accomplish user goals, continuously improve through validated local knowledge and experience, and operate transparently under user control.
 
 
 
@@ -702,4 +702,78 @@ Documentation-first engineering
 Reuse-before-build philosophy
 
 
-At this point, I think we've transitioned from "designing an AI assistant" to specifying an operating intelligence platform. The remaining work is less about inventing new capabilities and more about refining each module, defining interfaces, and documenting behavior before implementation begins. That puts us in an excellent position to start our Architecture Review Sessions.
+At this point, I think we've transitioned from "designing an AI assistant" to specifying an operating intelligence platform. The remaining work is less about inventing new capabilities and more about refining implementation details.
+
+---
+
+# Document Information
+
+**Document:** Software Requirements Specification (SRS)
+
+**Project:** Native AI
+
+**Version:** 1.0 Working Draft
+
+**Status:** Draft
+
+**Date:** 2026-07-15
+
+**Repository:** Tiboron/NativeAI
+
+---
+
+# Revision History
+
+| Version | Date | Author | Summary |
+|---------|------------|------------------------------|-----------------------------------------------|
+| 1.0 | 2026-07-15 | Project Director & Chief Architect | Initial Working Draft |
+
+---
+
+# Assumptions and Constraints
+
+## Assumptions
+
+- Native AI primarily targets Windows workstations.
+- Internet connectivity is optional.
+- AI inference is performed locally.
+- Users have administrative permission when required for certain system operations.
+
+## Constraints
+
+- The system must operate offline after installation.
+- Cloud AI services are not required for normal operation.
+- User approval is required before downloading external knowledge or performing system modifications.
+- Full functionality depends on compatible hardware meeting the minimum requirements.
+
+---
+
+# Glossary
+
+**Skill** — A reusable body of knowledge and workflows enabling Native AI to accomplish a class of tasks.
+
+**Capability** — The practical ability to execute a skill using software available on the workstation.
+
+**Workflow** — An ordered sequence of actions planned to accomplish a user goal.
+
+**Knowledge Base** — Validated information permanently retained by Native AI.
+
+**Local RAG** — Retrieval-Augmented Generation using locally stored documents and knowledge only.
+
+**Browser Gateway** — The controlled mechanism through which Native AI accesses the internet using the user's browser.
+
+**Adaptive Environment Manager** — The subsystem that discovers hardware, installed software, available resources, and execution capabilities.
+
+---
+
+# Requirement Classification
+
+Beginning with Version 1.1, all requirements shall be uniquely identified using requirement identifiers to support implementation and testing.
+
+Examples:
+
+- **FR-xxx** — Functional Requirements
+- **NFR-xxx** — Non-Functional Requirements
+- **SR-xxx** — Security Requirements
+- **IR-xxx** — Interface Requirements
+- **DR-xxx** — Data Requirements
