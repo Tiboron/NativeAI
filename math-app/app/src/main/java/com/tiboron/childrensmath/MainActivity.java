@@ -113,14 +113,13 @@ public class MainActivity extends Activity {
                 paint.setTextAlign(Paint.Align.LEFT);
                 paint.setColor(BLACK);
 
-                float answerX = dp(20);
-                float answerY = h - dp(30);
-                canvas.drawText("ANSWER", answerX, answerY, paint);
-                answerHit.set(answerX - dp(10), answerY - dp(30),
-                        answerX + dp(90), answerY + dp(10));
-
                 float nextW = dp(110), nextH = dp(48);
                 float nextX = w - nextW - dp(20), nextY = h - nextH - dp(16);
+                float answerX = w - dp(20);
+                float answerY = nextY - dp(18);
+                canvas.drawText("ANSWER", answerX, answerY, paint);
+                answerHit.set(answerX - dp(105), answerY - dp(30),
+                        answerX + dp(10), answerY + dp(10));
                 paint.setColor(BLACK);
                 canvas.drawRoundRect(new RectF(nextX, nextY, nextX + nextW, nextY + nextH),
                         dp(8), dp(8), paint);
